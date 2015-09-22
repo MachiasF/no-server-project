@@ -1,1 +1,17 @@
-<player-display each-players="eachPlayers"></player-display>
+<div class="flex">
+	<div class="inlineBlockA">
+			<div class="divHeaders"><h2><a ng-href="http://127.0.0.1:8080/#/home/members">Team Members</a></h2></div>
+			<ul>
+				<li ng-repeat="member in eachPlayers" class="inlineList" ng-click="findUser(member)">
+					<img src="{{member.playerIcon}}" class="profilePic">
+					<h3 class="inlineList">{{member.playerName}}:</h3> {{member.playerRole}}</br>
+				</li>
+			</ul>
+	</div>
+	<div class="inlineBlockB">
+	 	<div>
+			<player-data member="currentUser"></player-data>
+			</div>
+		</div>
+	</div>
+</div>

@@ -173,6 +173,19 @@ app.service('teamMemberServ', function($http){
 				}
 		}
 	];
+	var playerArray = this.playersInfo;
+	this.routePlayer = function (user) {
+		for (var i = 0; i < playerArray.length; i++){
+			for (var playerName in playerArray[i]){
+				if(playerArray[i].playerName === user){
+					console.log(playerArray[i]);
+					return playerArray[i];
+				}
+			}
+		}
+	};
+
+
 });
 
 

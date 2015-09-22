@@ -1,11 +1,18 @@
 var app = angular.module('dotaApp');
 
-app.controller('teamMembersCtrl', function($scope, homeServ, teamMemberServ){
-	$scope.homePlayers = homeServ.homePlayers;
-	console.log($scope.homePlayers);
-	$scope.eachPlayers = teamMemberServ.playersInfo;
-	console.log($scope.eachPlayers);
+app.controller('teamMembersCtrl', function($scope, homeServ, teamMemberServ, playerRef){
 	
-	// $scope.results = teamMemberStats.getTeamInfo();
-	//console.log(results());
+	console.log(playerRef);
+	
+	$scope.homePlayers = homeServ.homePlayers;
+	$scope.eachPlayers = teamMemberServ.playersInfo;
+
+	
+	
+	$scope.currentUser = {};
+	$scope.findUser = function (user) {
+		$scope.currentUser = user;
+		console.log(user);
+	};
+
 });

@@ -6,14 +6,17 @@ app.config(function($routeProvider){
 				templateUrl: '/app/html/homeTmpl.html',
 				controller: 'homeCtrl'
 			})
-			.when('/home/members', {
+			.when('/home/members/:memberId', {
 				templateUrl: '/app/html/teamMembersTmpl.html',
-				controller: 'teamMembersCtrl'
+				controller: 'teamMembersCtrl',
+				resolve: {
+					playerRef: function($route, teamMemberServ) {
+
+						return teamMemberServ.routePlayer($route.current.params.memberId);
+					}
+				}
 			})
-			.when('home/members/:memberId', {
-				templateUrl: '/app/html/memberTmpl.html',
-				controller: 'memberCtrl'
-			})
+			
 			.otherwise('/home')
 	
 });
