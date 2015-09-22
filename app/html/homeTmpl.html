@@ -1,0 +1,18 @@
+
+<div class="flex">
+	<div class="inlineBlockA">
+		<div class="divHeaders"><h2><a ng-href="http://127.0.0.1:8080/#/home/members">Team Members</a></h2></div>
+		<ul>
+			<li ng-repeat="player in homePlayers" class="inlineList"><img src="{{player.playerIcon}}" class="profilePic"><h3 class="inlineList"> {{player.teamId}}.</h3>{{player.playerName}}</br></li>
+		</ul>
+	</div>
+	
+	<div class="inlineBlockC">
+		<img src="app/images/news.png" class="news">
+		
+	</div>
+	<div class="inlineBlockA">
+		<div class="divHeaders"><h2>Team Store</h2></div>
+		<div ng-repeat="item in teamStore" class="divHeaders"><h4>{{item.productName}}: {{item.productCost}}</br> {{item.description}}</h4></br><img src="{{item.productFront}}" class="itemPic"> <img src="{{item.productBack}}" class="itemPic"></div>
+	</div>
+</div>

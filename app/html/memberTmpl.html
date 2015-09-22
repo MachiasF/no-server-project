@@ -1,0 +1,21 @@
+<div ng-repeat="member in eachPlayers" class="flex">
+	<div class="inlineBlockA">
+			
+				<ul>
+					<li class="inlineList" ng-click="toggle(member)">
+						<img src="{{member.playerIcon}}" class="profilePic">
+						<h3 class="inlineList">{{member.playerName}}:</h3> {{member.playerRole}}</br>
+					</li>
+				</ul>
+	</div>
+	<div class="inlineBlockB">
+	 	<div>
+			<h1 ng-show="member.details">{{member.playerName}}</h1>
+			<h3 ng-show="member.details">wins / losses / win ratio: </br>{{member.totalWins}} / {{member.totalLosses}} / {{member.winRate}}</h3>
+			<h3 ng-show="member.details" class="flex">Most played heroes</h3>
+			<div ng-show="member.details">
+				<img src="{{member.mostPlayedHero1.hero1Image}}" class="itemPic"><img src="{{member.mostPlayedHero2.hero1Image}}" class="itemPic"><img src="{{member.mostPlayedHero3.hero1Image}}" class="itemPic">
+			</div>
+		</div>
+	</div>
+</div>

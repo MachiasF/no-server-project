@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="dotaApp">
+	<head>
+		<title>Iron Branch Slap</title>
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body class="wholePage">
+        <header>
+            <div class="header">
+                <img src="app/images/teamLogo.png" class="teamLogo">
+                <div class="title"><a ng-href="http://127.0.0.1:8080/#/home">The Home of 50g Iron Branch Slap</a></div>
+             </div>
+        </header>
+        <div class="display">
+        <ng-view></ng-view>
+        </div>
+        <footer>
+
+        </footer>
+
+        
+        <!-- dota 2 api key A4BD264B738ED011EC85405CB5CCE91A-->
+
+        <!--Angular-->
+    	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>
+        <!--Angular Material Desing-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.js"></script>
+        <!--App-->
+        <script src="app/app.js"></script>
+        
+        <script src="app/home/homeCtrl.js"></script>
+        <script src="app/home/homeDir.js"></script>
+        <script src="app/home/homeServ.js"></script>
+
+        <script src="app/member/memberStatsCtrl.js"></script>
+        <script src="app/member/memberStatsDir.js"></script>
+        <script src="app/member/memberStatsServ.js"></script>
+
+        <script src="app/teamMembers/teamMembersCtrl.js"></script>
+        <script src="app/teamMembers/teamMembersDir.js"></script>
+        <script src="app/teamMembers/teamMembersServ.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,145 @@
+html { 
+  background: url(app/images/background.jpeg) no-repeat center 20% fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+a {
+	text-decoration: none;
+}
+a:link {
+color: #610707;
+
+}
+a:visited {
+color: #610707;
+}
+a:hover {
+color: #000000;
+}
+.wholePage {
+	color: red;
+}
+.header {
+	background-color: #303030;
+	height: 150px;
+	width: 110%;
+	position: fixed;
+	top: 0px;
+	left: -10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-bottom: 3px double #610707;
+	
+
+}
+.teamLogo {
+	float: left;
+	max-width: 100px;
+	margin-top: 25px;
+	margin-right: 50px;
+	margin-left: 100px;
+	border: 3px double #610707;
+	
+
+}
+.title {
+	margin-top: 25px;
+
+	font-family: "Apple Chancery";
+	color: #610707;
+  	font-weight: bold;
+  	text-shadow: 1.5px 1.5px #454545;
+  	font-size: 4rem;
+
+}
+.flex {
+	display: flex;
+}
+.display {
+	margin-top: 175px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.inlineBlockA {
+	display: inline-block;
+	padding-right: 1%;
+	padding-left: 1%;
+	margin: 0 0 0 10px;
+	width: 30%;
+	color: black;
+	border: 1px solid;
+	vertical-align: top;
+	background: rgba(200, 200, 200, .55);
+}
+
+.inlineBlockB {
+	display: inline-block;
+	padding-right: 2%;
+	padding-left: 2%;
+	margin: 0 0 0 10px;
+	width: 60%;
+	min-height: 66%;
+	color: black;
+	border: 1px solid;
+	vertical-align: top;
+	background: rgba(200, 200, 200, .55);
+}
+.inlineBlockC {
+	display: inline-block;
+	padding-right: 1%;
+	padding-left: 1%;
+	margin: 0 0 0 10px;
+	
+	color: black;
+	border: 1px solid;
+	vertical-align: top;
+	background: rgba(200, 200, 200, .55);
+	overflow: hidden;
+	padding: 0px;
+}
+.inlineBlockD {
+	display: inline-block;
+	padding-right: 1%;
+	padding-left: 1%;
+	margin: 0 0 0 10px;
+	width: 30%;
+	color: black;
+	
+	vertical-align: top;
+	background: rgba(200, 200, 200, .55);
+}
+.inlineBlockE {
+	display: inline-block;
+	padding-right: 2%;
+	padding-left: 2%;
+	margin: 0 0 0 10px;
+	width: 60%;
+	min-height: 66%;
+	color: black;
+	
+	vertical-align: top;
+	background: rgba(200, 200, 200, .55);
+}
+.inlineList {
+	display: inline;	
+}
+.profilePic {
+	max-width: 25px;
+	max-height: 25px;
+}
+.itemPic {
+	max-height: 75px;
+}
+.divHeaders {
+	text-align: center;
+	border-bottom: 2px solid black;
+}
+.news {
+	max-width: 100%;
+	margin: 0px;
+}
+
