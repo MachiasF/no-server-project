@@ -1,22 +1,27 @@
 
 <div class="flex">
 	<div class="inlineBlockA">
-		<div class="divHeaders"><h2><a ng-href="http://127.0.0.1:8080/#/home/members">Team Members</a></h2></div>
+		<div class="divHeaders"><h2>Team Members</a></h2></div>
 		<ul>
 			<li ng-repeat="player in homePlayers" class="inlineList"><img src="{{player.playerIcon}}" class="profilePic"> 
-				<a ng-href="/#/home/members/{{player.playerName}}"><h3 class="inlineList"> 
+				<a ng-href="/#/home/members/{{player.playerName}}" ng-click="findUser(member)"><h3 class="inlineList"> 
 					{{player.teamId}}.</h3>{{player.playerName}}
 				</a></br>
 			</li>
 		</ul>
 	</div>
-	
+	<image-pop></image-pop>
 	<div class="inlineBlockC">
 		<a href="http://www.dotafire.com/dota-2/forum/news/evil-geniuses-grand-champions-47668"><img src="app/images/news.png" class="news"></a>
 		
 	</div>
 	<div class="inlineBlockA">
 		<div class="divHeaders"><h2>Team Store</h2></div>
-		<div ng-repeat="item in teamStore" class="divHeaders"><h4>{{item.productName}}: {{item.productCost}}</br> {{item.description}}</h4></br><img src="{{item.productFront}}" class="itemPic"> <img src="{{item.productBack}}" class="itemPic"></div>
+		<div ng-repeat="item in teamStore" class="divHeaders"><h4>{{item.productName}}: {{item.productCost}}</br> {{item.description}}</h4></br>
+			<img src="{{item.productFront}}" class="itemPic" ng-click="findItem(item.productFront)">
+			<img src="{{item.productBack}}" class="itemPic" ng-click="findItem(item.productBack)"> 
+			
+		</div>
 	</div>
 </div>
+

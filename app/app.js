@@ -13,7 +13,8 @@ app.config(function($routeProvider){
 					playerRef: function($route, teamMemberServ) {
 
 						return teamMemberServ.routePlayer($route.current.params.memberId);
-					}
+					},
+					
 				}
 			})
 			

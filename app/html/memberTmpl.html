@@ -1,7 +1,10 @@
 		<div ng-show="member.playerName">
-			<h1 class="divHeaders">{{member.playerName}}</h1>
-			<h3>Wins / Losses / Win Ratio: </br>{{member.totalWins}} / {{member.totalLosses}} / {{member.winRate}}</h3>
-			<h3 class="flex">Most played heroes</h3>
-			<div>
-			<img src="{{member.mostPlayedHero1.hero1Image}}" class="itemPic"><img src="{{member.mostPlayedHero2.hero1Image}}" class="itemPic"><img src="{{member.mostPlayedHero3.hero1Image}}" class="itemPic">
+			<h1 class="divHeaders"><a href="https://www.dotabuff.com/players/{{member.playerId}}">{{member.playerName}}</a></h1>
+			<h3 class="divCenter">Wins / Losses / Win Ratio: </br>{{member.totalWins}} / {{member.totalLosses}} / {{member.winRate}}</h3>
+			<h3 class="divCenter">Most played heroes:</h3>
+			<div class="flexA" class="divCenter">
+			<!-- <audio id="hero" src= > -->
+			<img src="{{member.mostPlayedHero1.heroImage}}" class="itemPicA" ng-click="getHero(member.mostPlayedHero1.heroIntro)">
+			<img src="{{member.mostPlayedHero2.heroImage}}" class="itemPicA" ng-click="getHero(member.mostPlayedHero2.heroIntro)">
+			<img src="{{member.mostPlayedHero3.heroImage}}" class="itemPicA" ng-click="getHero(member.mostPlayedHero3.heroIntro)">
 		</div>

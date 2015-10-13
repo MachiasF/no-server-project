@@ -1,8 +1,8 @@
 <div class="flex">
 	<div class="inlineBlockA">
-			<div class="divHeaders"><h2><a ng-href="http://127.0.0.1:8080/#/home/members">Team Members</a></h2></div>
+			<div class="divHeaders"><h2>Team Members</h2></div>
 			<ul>
-				<li ng-repeat="member in eachPlayers" class="inlineList" ng-click="findUser(member)">
+				<li ng-repeat="member in eachPlayers" class="inlineListA"  ng-click="findUser(member)">
 					<img src="{{member.playerIcon}}" class="profilePic">
 					<h3 class="inlineList">{{member.playerName}}:</h3> {{member.playerRole}}</br>
 				</li>
@@ -10,7 +10,7 @@
 	</div>
 	<div class="inlineBlockB">
 	 	<div>
-			<player-data member="currentUser"></player-data>
+			<player-data member="currentUser" getHero="getHero()"></player-data>
 			</div>
 		</div>
 	</div>

@@ -1,6 +1,6 @@
 var app = angular.module('dotaApp');
 
-app.service('homeServ', function($http){
+app.service('homeServ', function(){
 	this.homePlayers = [
 		{
 			playerIcon: 'app/images/nokly.jpg',
@@ -33,6 +33,8 @@ app.service('homeServ', function($http){
 			teamId: '50g'
 		}
 	];
+	
+
 	this.storeItems = [
 		{
 			productName: 'Hoodie',

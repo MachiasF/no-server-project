@@ -1,0 +1,9 @@
+{
+  "firebase": "iron-branch-slap",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

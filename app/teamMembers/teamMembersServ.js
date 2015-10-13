@@ -4,6 +4,7 @@ app.service('teamMemberServ', function($http){
 
 	this.playersInfo = [
 		{
+			playerId: 152271131,
 			details: false,
 			playerIcon: 'app/images/nokly.jpg',
 			teamId: '50g',
@@ -17,27 +18,31 @@ app.service('teamMemberServ', function($http){
 				heroName: 'Vengeful Spirit',
 				heroRole: 'Support',
 				heroType: 'Agility',
-				hero1Image: 'app/images/heroes/vengefulspirit_full.png',
-				bestKDA: 24
+				heroImage: 'app/images/heroes/vengefulspirit_full.png',
+				bestKDA: 24,
+				heroIntro: 'app/sound/Vng_spawn_01.mp3'
 			},
 			mostPlayedHero2:
 			{
 				heroName: 'Crystal Maiden',
 				heroRole: 'Support',
 				heroType: 'Intellect',
-				hero1Image: 'app/images/heroes/crystal_maiden_full.png',
-				bestKDA: 21
+				heroImage: 'app/images/heroes/crystal_maiden_full.png',
+				bestKDA: 21,
+				heroIntro: 'app/sound/Cm_spawn_01.mp3'
 			},
 			mostPlayedHero3:
 			{
 				heroName: 'Sprectre',
 				heroRole: 'Carry',
 				heroType: 'Agility',
-				hero1Image: 'app/images/heroes/spectre_full.png',
-				bestKDA: 36
+				heroImage: 'app/images/heroes/spectre_full.png',
+				bestKDA: 36,
+				heroIntro: 'app/sound/Spec_spawn_01.mp3'
 			}	
 		},
 		{
+			playerId: 86479497,
 			details: false,
 			playerIcon: 'app/images/hideNSeek.jpg',
 			teamId: '50g',
@@ -51,26 +56,30 @@ app.service('teamMemberServ', function($http){
 					heroName: 'Lifestealer',
 					heroRole: 'Carry',
 					heroType: 'Strength',
-					hero1Image: 'app/images/heroes/life_stealer_full.png',
-					bestKDA: 36
+					heroImage: 'app/images/heroes/life_stealer_full.png',
+					bestKDA: 36,
+					heroIntro: 'app/sound/Lifest_spawn_01.mp3'
 				},
 			mostPlayedHero2: 
 				{	heroName: 'Disruptor',
 					heroRole: 'Support',
 					heroType: 'Intellect',
-					hero1Image: 'app/images/heroes/disruptor_full.png',
-					bestKDA: 34 
+					heroImage: 'app/images/heroes/disruptor_full.png',
+					bestKDA: 34,
+					heroIntro: 'app/sound/Dis_spawn_01.mp3' 
 				},
 			mostPlayedHero3: 
 				{
 					heroName: 'Legion Commander',
 					heroRole: 'Carry',
 					heroType: 'Strength',
-					hero1Image: 'app/images/heroes/legion_commander_full.png',
-					bestKDA: 21
+					heroImage: 'app/images/heroes/legion_commander_full.png',
+					bestKDA: 21,
+					heroIntro: 'app/sound/Legcom_spawn_01.mp3'
 				}
 		},
 		{
+			playerId: 86480099,
 			details: false,
 			playerIcon: 'app/images/tyrone.jpg',
 			teamId: '50g',
@@ -84,27 +93,31 @@ app.service('teamMemberServ', function($http){
 					heroName: 'Mirana',
 					heroRole: 'Carry',
 					heroType: 'Agility',
-					hero1Image: 'app/images/heroes/mirana_full.png',
-					bestKDA: 17
+					heroImage: 'app/images/heroes/mirana_full.png',
+					bestKDA: 17,
+					heroIntro: 'app/sound/Mir_spawn_01.mp3'
 				},
 			mostPlayedHero2: 
 				{
 					heroName: 'Storm Spirit',
 					heroRole: 'Carry',
 					heroType: 'Intellect',
-					hero1Image: 'app/images/heroes/storm_spirit_full.png',
-					bestKDA: 11.33
+					heroImage: 'app/images/heroes/storm_spirit_full.png',
+					bestKDA: 11.33,
+					heroIntro: 'app/sound/Ss_spawn_01.mp3'
 				},
 			mostPlayedHero3: 
 				{
 					heroName: 'Ogre Magi',
 					heroRole: 'Support',
 					heroType: 'Intellect',
-					hero1Image: 'app/images/heroes/ogre_magi_full.png',
-					bestKDA: 35
+					heroImage: 'app/images/heroes/ogre_magi_full.png',
+					bestKDA: 35,
+					heroIntro: 'app/sound/Ogmag_spawn_01.mp3'
 				}
 		},
 		{
+			playerId: 173282682,
 			details: false,
 			playerIcon: 'app/images/shadow.jpg',
 			teamId: '50g',
@@ -118,27 +131,31 @@ app.service('teamMemberServ', function($http){
 					heroName: 'Necrophos',
 					heroRole: 'Carry',
 					heroType: 'Intellect',
-					hero1Image: 'app/images/heroes/necrolyte_full.png',
-					bestKDA: 21
+					heroImage: 'app/images/heroes/necrolyte_full.png',
+					bestKDA: 21,
+					heroIntro: 'app/sound/Necr_spawn_01.mp3'
 				},
 			mostPlayedHero2: 
 				{
 					heroName: 'Bristleback',
 					heroRole: 'Carry',
 					heroType: 'Strength',
-					hero1Image: 'app/images/heroes/bristleback_full.png',
-					bestKDA: 36
+					heroImage: 'app/images/heroes/bristleback_full.png',
+					bestKDA: 36,
+					heroIntro: 'app/sound/Bristle_spawn_01.mp3'
 				},
 			mostPlayedHero3: 
 				{
 					heroName: 'Weaver',
 					heroRole: 'Carry',
 					heroType: 'Agility',
-					hero1Image: 'app/images/heroes/weaver_full.png',
-					bestKDA: 36
+					heroImage: 'app/images/heroes/weaver_full.png',
+					bestKDA: 36,
+					heroIntro: 'app/sound/Weav_spawn_01.mp3'
 				}
 		},
 		{
+			playerId: 82553055,
 			details: false,
 			playerIcon: 'app/images/mooch.jpg',
 			teamId: '50g',
@@ -152,24 +169,27 @@ app.service('teamMemberServ', function($http){
 					heroName: 'Earthshaker',
 					heroRole: 'Support',
 					heroType: 'Strength',
-					hero1Image: 'app/images/heroes/earthshaker_full.png',
-					bestKDA: 25
+					heroImage: 'app/images/heroes/earthshaker_full.png',
+					bestKDA: 25,
+					heroIntro: 'app/sound/Erth_spawn_01.mp3'
 				},
 			mostPlayedHero2: 
 				{
 					heroName: 'Wraith King',
 					heroRole: 'Carry',
 					heroType: 'Strength',
-					hero1Image: 'app/images/heroes/wraith_king_full.png',
-					bestKDA: 29
+					heroImage: 'app/images/heroes/wraith_king_full.png',
+					bestKDA: 29,
+					heroIntro: 'app/sound/Wraith_spawn_01.mp3'
 				},
 			mostPlayedHero3: 
 				{
 					heroName: 'Shadow Shaman',
 					heroRole: 'Support',
 					heroType: 'Intellect',
-					hero1Image: 'app/images/heroes/shadow_shaman_full.png',
-					bestKDA: 7
+					heroImage: 'app/images/heroes/shadow_shaman_full.png',
+					bestKDA: 7,
+					heroIntro: 'app/sound/Shad_spawn_01.mp3'
 				}
 		}
 	];
@@ -228,11 +248,11 @@ app.service('teamMemberServ', function($http){
 // 				country_code: "",
 // 				url: "",
 // 				games_played_with_current_roster: 0,
-// 				player_0_account_id: 82553055,
-// 				player_1_account_id: 86479497,
-// 				player_2_account_id: 86480099,
-// 				player_3_account_id: 152271131,
-// 				player_4_account_id: 173282682,
+// 				player_0_account_id: 82553055, mooch
+// 				player_1_account_id: 86479497,	taylor
+// 				player_2_account_id: 86480099,  jordan
+// 				player_3_account_id: 152271131,	kalan
+// 				player_4_account_id: 173282682, charlie
 // 				admin_account_id: 152271131
 // 			}
 // 		}
